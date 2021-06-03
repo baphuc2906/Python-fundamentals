@@ -65,6 +65,36 @@ class learnBasicPython:
         print(','.join(value))
 
 
+print("Chao mung den voi bai học python don gian!!!");
+while True:
+    print("---------------- Category ------------------")
+    print('1. Xem sinh nhật của bạn bè trong danh sách ')
+    print('2. Tim Ước của 1 số cho trước ')
+    print('3. Tinh gia tri cua bieu thưc căn ')
+    print("enter your number: ")
+    number = int(input())
+    arrayTest =  [1,2,3, 4]
+
+    if not type(number) is int:
+        raise TypeError("Only integers are allowed")
+        continue;
+
+    if not number in arrayTest:
+        print("Vui long nhap lai")
+        continue
+
+    name = str(input("Nhap ten cua ban: "))
+    lop = str(input("Nhap lop cua ban: "))
+
+    Phuc = learnBasicPython("phuc", "18TCLC_DT3")
+    if number == 1:
+       Phuc.showBirthDay()
+    elif number == 2:
+        Phuc.timUoc()
+    elif number == 3:
+        Phuc.caclulator
+    else:
+        break
 
 
 
